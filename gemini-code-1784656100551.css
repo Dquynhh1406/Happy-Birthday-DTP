@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e8e3d9; /* Màu be trầm nền ngoài */
+    color: #2b2d42;
+    font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 800px;
+    height: 520px;
+    background-color: #1b4332; /* Xanh lá đậm phong cách thiên nhiên */
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(27, 67, 50, 0.35);
+    border: 3px solid #40916c;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #081c15;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2d6a4f;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.title {
+    color: #d8f3dc;
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.terminal-body {
+    padding: 18px;
+    flex: 1;
+    overflow-y: auto;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #f5ebe0; /* Màu chữ chính: be sáng */
+}
+
+.output {
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+.welcome-banner {
+    color: #b7e4c7;
+    border: 1px dashed #52b788;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(45, 106, 79, 0.2);
+}
+
+.input-line {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.prompt {
+    color: #74c69d;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: #fff3b0; /* Màu chữ khi gõ: be vàng */
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    flex: 1;
+    outline: none;
+}
+
+.lilac-name { color: #d8bbff; font-weight: bold; }
+.highlight-name { color: #ffb703; font-weight: bold; }
+.cmd-text { color: #52b788; font-weight: bold; }
+.wish-box {
+    border-left: 4px solid #ffb703;
+    padding-left: 12px;
+    color: #f4f1de;
+    background: rgba(255, 183, 3, 0.08);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 8px 0;
+}
+.secret-box {
+    border-left: 4px solid #d8bbff;
+    padding-left: 12px;
+    color: #e8e8e4;
+    background: rgba(216, 187, 255, 0.08);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 8px 0;
+}
+.gift-result {
+    color: #ffbe0b;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2d6a4f;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #74c69d;
+    text-align: center;
+    margin: 10px 0;
+}
+.error { color: #ff6b6b; }
