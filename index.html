@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal - Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Thư viện hiệu ứng pháo hoa khi nhận quà -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <span class="btn red"></span>
+            <span class="btn yellow"></span>
+            <span class="btn green"></span>
+            <span class="title">bash - 80x24</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+            <div class="output">
+🎉 Welcome to Birthday Terminal v2026.07
+Gõ <span class="highlight">'help'</span> để xem danh sách các lệnh available.
+--------------------------------------------------
+            </div>
+            <div class="input-line">
+                <span class="prompt">user@birthday-pc:~$</span>
+                <input type="text" id="command-input" autofocus autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
